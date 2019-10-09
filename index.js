@@ -5,7 +5,7 @@ const router = require("./routes");
 require("dotenv").config();
 require("./db");
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3306;
 // middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
