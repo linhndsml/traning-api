@@ -2,6 +2,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const router = require("./routes");
+const cors = require("cors");
+
+app.use(cors());
 require("dotenv").config();
 require("./db");
 const app = express();
